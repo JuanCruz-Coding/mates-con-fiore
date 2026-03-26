@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mates con Fiore — Clases de Matemáticas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header class="nav">
+    <div class="nav__container">
+      <a href="#inicio" class="nav__logo">Mates con Fiore</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="navMenu">
+        <a href="#servicios">Servicios</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="nav__cta">Reservar clase</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <span class="hero__tag">Clases de matemáticas</span>
+        <h1 class="hero__title">Las matemáticas son más fáciles de lo que creés</h1>
+        <p class="hero__subtitle">Clases personalizadas para secundaria y adultos. Presencial en Gobernador Gálvez u online desde donde estés.</p>
+        <div class="hero__btns">
+          <a href="#contacto" class="btn btn--primary">Reservar clase</a>
+          <a href="#servicios" class="btn btn--outline">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+      <div class="container">
+        <h2 class="section-title">¿Cómo puedo ayudarte?</h2>
+        <p class="section-subtitle">Clases adaptadas a tu nivel, ritmo y disponibilidad.</p>
+        <div class="servicios__grid">
+
+          <div class="servicio-card">
+            <div class="servicio-card__icon">📐</div>
+            <h3 class="servicio-card__title">Secundaria</h3>
+            <p class="servicio-card__desc">Álgebra, geometría, funciones, trigonometría y más. Preparación para exámenes y recuperatorios.</p>
+            <span class="servicio-card__tag">Todos los años</span>
+          </div>
+
+          <div class="servicio-card">
+            <div class="servicio-card__icon">🎓</div>
+            <h3 class="servicio-card__title">Adultos</h3>
+            <p class="servicio-card__desc">Sin importar tu edad ni cuánto tiempo pasó. Empezamos desde donde necesitás, sin juicios.</p>
+            <span class="servicio-card__tag">A tu ritmo</span>
+          </div>
+
+          <div class="servicio-card">
+            <div class="servicio-card__icon">👥</div>
+            <h3 class="servicio-card__title">Grupos reducidos</h3>
+            <p class="servicio-card__desc">Clases de hasta 3 personas. Aprendés con otros y el costo es menor. Ideal para compañeros de curso.</p>
+            <span class="servicio-card__tag">Hasta 3 personas</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGÍA -->
+    <section class="metodologia" id="metodologia">
+      <div class="container">
+        <h2 class="section-title">Cómo trabajo</h2>
+        <p class="section-subtitle">Un proceso simple pensado para que entiendas de verdad.</p>
+        <div class="pasos__grid">
+
+          <div class="paso">
+            <div class="paso__num">1</div>
+            <h3 class="paso__title">Diagnóstico inicial</h3>
+            <p class="paso__desc">En la primera clase evaluamos tu nivel y definimos qué necesitás trabajar para llegar a tu objetivo.</p>
+          </div>
+
+          <div class="paso">
+            <div class="paso__num">2</div>
+            <h3 class="paso__title">Clases personalizadas</h3>
+            <p class="paso__desc">Cada clase está pensada para vos. Explicaciones claras, ejemplos reales y ejercicios graduales.</p>
+          </div>
+
+          <div class="paso">
+            <div class="paso__num">3</div>
+            <h3 class="paso__title">Seguimiento continuo</h3>
+            <p class="paso__desc">Revisamos tu progreso clase a clase y ajustamos el ritmo según cómo vayas avanzando.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="sobre-mi" id="sobre-mi">
+      <div class="container sobre-mi__inner">
+        <div class="sobre-mi__img-wrap">
+          <img src="img/fiore.jpg" alt="Fiore, profesora de matemáticas" class="sobre-mi__img" />
+        </div>
+        <div class="sobre-mi__text">
+          <h2 class="section-title left">Hola, soy Fiore</h2>
+          <p>Soy profesora de matemáticas con experiencia trabajando con alumnos de secundaria y adultos. Me apasiona encontrar la forma en que cada persona aprende mejor.</p>
+          <p>Creo que no existe el "no sirvo para las mates" — solo falta encontrar la explicación correcta. Por eso cada clase es diferente y está pensada para vos.</p>
+          <a href="#contacto" class="btn btn--primary" style="margin-top: 1.25rem; display: inline-block;">Contactame</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+      <div class="container">
+        <h2 class="section-title">Reservá tu clase</h2>
+        <p class="section-subtitle">Escribime y coordinarmos un horario que te quede cómodo.</p>
+        <div class="contacto__inner">
+
+          <form class="contacto__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+              <span class="form-error" id="errorNombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" />
+              <span class="form-error" id="errorEmail"></span>
+            </div>
+            <div class="form-group">
+              <label for="nivel">Nivel</label>
+              <select id="nivel" name="nivel">
+                <option value="">Seleccioná tu nivel</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="adultos">Adulto / otra situación</option>
+                <option value="grupo">Quiero armar un grupo</option>
+              </select>
+              <span class="form-error" id="errorNivel"></span>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contame qué necesitás, en qué materia o tema tenés dificultades..."></textarea>
+              <span class="form-error" id="errorMensaje"></span>
+            </div>
+            <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+            <p class="form-success" id="formSuccess"></p>
+          </form>
+
+          <div class="contacto__info">
+            <div class="info-item">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/549XXXXXXXXXX" target="_blank">+54 9 XX XXXX-XXXX</a>
+            </div>
+            <div class="info-item">
+              <strong>Email</strong>
+              <a href="mailto:fiore@email.com">fiore@email.com</a>
+            </div>
+            <div class="info-item">
+              <strong>Modalidades</strong>
+              <span>Presencial en Gobernador Gálvez</span>
+              <span>Online por videollamada</span>
+            </div>
+            <div class="info-item">
+              <strong>Horarios</strong>
+              <span>Lunes a Sábado — a coordinar</span>
+            </div>
+            <div class="info-item">
+              <strong>Instagram</strong>
+              <a href="https://instagram.com/matesconfiore" target="_blank">@matesconfiore</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__logo">Mates con Fiore</span>
+      <span class="footer__copy">© 2025 Mates con Fiore — Gobernador Gálvez, Santa Fe</span>
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
