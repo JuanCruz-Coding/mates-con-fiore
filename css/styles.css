@@ -99,16 +99,20 @@ a:hover { color: var(--color-acento-hover); }
 .nav__container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .nav__logo {
-  font-family: var(--fuente-titulo);
-  font-size: 1.2rem;
-  color: var(--color-acento);
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
 }
 .nav__menu {
   display: flex;
