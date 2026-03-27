@@ -1,7 +1,3 @@
-// =============================================
-//  MATES CON FIORE — main.js
-// =============================================
-
 // --- Menú hamburguesa ---
 const navToggle = document.getElementById('navToggle');
 const navMenu   = document.getElementById('navMenu');
@@ -16,7 +12,7 @@ navMenu.querySelectorAll('a').forEach(link => {
 });
 
 
-// --- Validación del formulario ---
+// --- Formulario → WhatsApp ---
 const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', (e) => {
@@ -55,7 +51,17 @@ form.addEventListener('submit', (e) => {
   }
 
   if (valido) {
-    document.getElementById('formSuccess').textContent = '¡Mensaje enviado! Fiore te va a responder a la brevedad.';
+    const telefono = '5493412140785';
+    const texto = `Hola Fiore! Te escribo desde matesconfiore.com.ar 👋
+*Nombre:* ${nombre.value.trim()}
+*Email:* ${email.value.trim()}
+*Nivel:* ${nivel.value}
+*Mensaje:* ${mensaje.value.trim()}`;
+
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+
+    document.getElementById('formSuccess').textContent = '¡Redirigiendo a WhatsApp...';
     form.reset();
   }
 });
